@@ -1,0 +1,4 @@
+#this is missing the git push repo part
+apt update && apt install sudo
+apt install build-essential
+gcc -v

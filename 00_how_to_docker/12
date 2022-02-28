@@ -1,0 +1,2 @@
+#check issue with password
+docker run --name roach-warden -d -e PMA_HOST=spawning-pool -p 8081:80 phpmyadmin
