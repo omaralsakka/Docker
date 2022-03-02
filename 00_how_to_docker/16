@@ -1,0 +1,9 @@
+docker run --name Abathur -v ~/:/root -p 192.168.56.1:3000:3000 -d -it python:2-slim
+docker exec Abathur pip install Flask
+echo 'from flask import Flask
+app = Flask(__name__)
+@app.route("/")
+def my_method():
+	return "<h1>Hello World</h1>"' > ~/hello.py
+HOST=$(docker inspect -f "{{.NetworkSettings.IPAddress}}" Abathur)
+docker exec -e FLASK_APP=/root/hello.py Abathur flask run --host=$HOST -p 3000
