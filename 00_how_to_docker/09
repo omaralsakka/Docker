@@ -1,6 +1,5 @@
-#docker network create omar-nw
-#docker run --name spawning-pool --network omar-nw --restart on-failure -v /var/lib/docker/volumes/hatchery:/var/lib/mariadb -e MARIADB_ROOT_PASSWORD=Kerrigan -e MARIADB_DATABASE=zerglings -it -d mysql:5.5
-docker run --name spawning-pool --restart on-failure \
+docker network create omar-nw
+docker run --name spawning-pool --network omar-nw --restart on-failure \
 		-v /var/lib/docker/volumes/hatchery:/var/lib/mysql \
 		-e MYSQL_ROOT_PASSWORD=Kerrigan -e MYSQL_DATABASE=zerglings \
 		-it -d mysql:5.5
