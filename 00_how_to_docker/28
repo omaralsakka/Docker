@@ -1,1 +1,1 @@
-docker service rm -f $(docker service ls)
+docker service rm $(docker service ls)
