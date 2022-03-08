@@ -1,1 +1,1 @@
-docker rm -f $(docker ps -a)
+docker rm -f $(docker ps -a -q)

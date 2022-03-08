@@ -1,2 +1,2 @@
-docker run --name roach-warden --network omar-nw -d -e PMA_HOST=spawning-pool \
-		-p 192.168.56.1:8081:80 phpmyadmin
+docker run --name roach-warden --network omar-nw -e PMA_HOST=spawning-pool \
+		-p 192.168.56.1:8081:80 -d phpmyadmin
