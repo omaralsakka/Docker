@@ -1,0 +1,2 @@
+docker build -t omar/ex03 .
+docker docker run -it --rm -p 8080:80 -p 8022:22 -p 8443:443 --memory="8g" --cpus="3" --privileged -e GITLAB_ROOT_PASSWORD="12345678" omar/ex03 bash
