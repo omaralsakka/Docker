@@ -20,3 +20,7 @@ RUN apt-get update -y && \
 EXPOSE 22 443 80
 
 CMD (/opt/gitlab/embedded/bin/runsvdir-start &) && gitlab-ctl reconfigure && service ssh restart && gitlab-ctl tail
+
+#first docker build -t omar/ex03
+#second docker run -it --rm -p 80:80 -p 4242:22 -p 443:443 --privileged -e GITLAB_ROOT_EMAIL="omar@gmail.com"
+# -e GITLAB_ROOT_PASSWORD="12345678" omar/ex03
