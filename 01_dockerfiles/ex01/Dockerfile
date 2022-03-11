@@ -8,6 +8,6 @@ RUN			apt-get update -y && apt-get upgrade -y && \
 WORKDIR		teamspeak3-server_linux_amd64
 ENTRYPOINT	sh ts3server_minimal_runscript.sh
 
-#first docker build -t omar/ex01 .
-#second docker run -it --rm -p=9987:9987/udp  -p=10011:10011 -p=30033:30033 omar/ex01
-#copy the token and past it in connect-teamspeak app box
+#docker build -t omar/ex01 .
+#docker run -it --rm -p=9987:9987/udp  -p=10011:10011 -p=30033:30033 omar/ex01
+#copy the token and past it in <connect_tab> inside teamspeak app
