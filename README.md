@@ -1,5 +1,5 @@
 # Docker
-DOCKER / Hive Helsinki
+docker-1 / Hive Helsinki
 
 ## :diamond_shape_with_a_dot_inside: **Project's goal:**
 
