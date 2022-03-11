@@ -12,4 +12,7 @@ RUN		echo \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 RUN		sudo apt-get update && sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 RUN		sudo apt-get install -y python3.6
-RUN		sudo apt-get update -y && sudo apt-get upgrade -y 
+RUN		sudo apt-get update -y && sudo apt-get upgrade -y
+
+#docker build -t debian/build .
+#docker run -it debian/build

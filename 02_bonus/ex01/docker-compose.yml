@@ -37,3 +37,6 @@ services:
       - PMA_PORT=3306 
     networks:
       db:
+
+#docker-compose up -d 
+#ssh USERNAME@YOURDOMAIN.COM_or_localhost -L40001:127.0.0.1:40001
